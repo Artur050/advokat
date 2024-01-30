@@ -1,0 +1,238 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  overflow-x: clip;
+}
+
+.header {
+  font-family: "Mulish", sans-serif;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 9;
+}
+.header__container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px 0;
+  font-size: 40px;
+}
+.header__menu {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  list-style: none;
+}
+.header__menu a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 200;
+  font-size: 25px;
+}
+.header__menu a :hover {
+  color: white;
+}
+.header__menu a span {
+  position: relative;
+  font-size: 2em;
+  font-weight: 600;
+  letter-spacing: 0.5em;
+  transition: 0.5s;
+  text-transform: uppercase;
+}
+
+main .about {
+  width: 100%;
+  margin: 0 auto;
+}
+main .about__title {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  font-size: larger;
+}
+main .about__title h1 {
+  color: rgba(8, 8, 8, 0);
+  font-family: "Rubik Mono One", monospace;
+}
+main .about__title #advokat {
+  font-family: "Rubik Mono One";
+  font-size: 22px;
+}
+main .about__title #name {
+  font-family: "Pacifico", cursive;
+  font-size: 40px;
+  color: #cd0e0e;
+}
+main .about__title h3 {
+  font-family: "Mulish", sans-serif;
+  font-size: 28px;
+  font-weight: 900;
+}
+main .about__back img {
+  width: 100%;
+  height: 600px;
+  background-image: url("/public/img/04.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.services__title {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  font-family: "Mulish", sans-serif;
+  font-size: 28px;
+  font-weight: 900;
+}
+.services__container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  transform-style: preserve-3d;
+}
+.services__box {
+  position: relative;
+  width: 275px;
+  height: 275px;
+  background: #000;
+  transition: 0.4s;
+  transform-style: preserve-3d;
+  overflow: hidden;
+}
+.services__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  padding: 20px;
+  align-items: flex-end;
+  box-sizing: border-box;
+}
+.services__content h2 {
+  color: #fff;
+  transition: 0.3s;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  font-size: 20px;
+  transform: translateY(200px);
+}
+.services__content p {
+  color: #fff;
+  transition: 0.4s;
+  font-size: 14px;
+  transform: translateY(200px);
+}
+.services__imgBx {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.services__imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.services__imgBx::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgb(215, 183, 183), #000);
+  z-index: 1;
+  opacity: 0;
+  transition: 0.5s;
+  mix-blend-mode: multiply;
+}
+
+.services__box:hover .services__imgBx::before {
+  opacity: 1;
+}
+
+.services__box:hover .services__content h2 {
+  transform: translateY(0px);
+  transition-delay: 0.5s;
+}
+
+.services__box:hover .services__content p {
+  transform: translateY(0px);
+  transition-delay: 0.4s;
+}
+
+.services__container:hover .services__box {
+  transform: rotateY(25deg);
+}
+
+.services__container .services__box:hover ~ .services__box {
+  transform: rotateY(-25deg);
+}
+
+.services__container .services__box:hover {
+  transform: rotateY(0deg) scale(1.25);
+  z-index: 1;
+  box-shadow: 0 25px 40px rgba(0, 0, 0, 0.5);
+}
+
+.address__body {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 0px 0px 0px;
+  flex-direction: column;
+}
+.address__title {
+  padding: 40px;
+  font-size: 28px;
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  font-family: "Mulish", sans-serif;
+}
+
+.footer__body {
+  width: 100%;
+  height: 250px;
+  background-image: url("/public/img/11.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.footer__contact {
+  display: flex;
+  width: 100%;
+  position: absolute;
+  justify-content: space-around;
+  align-items: flex-start;
+  font-size: 28px;
+  color: aliceblue;
+  gap: 40px;
+  margin-top: 100px;
+  letter-spacing: 10px;
+}
+.footer__logo {
+  width: 40px;
+  height: 40px;
+}
+
+/*# sourceMappingURL=style.css.map */

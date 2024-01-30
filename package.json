@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "convert": "sass --watch public/scss/style.scss public/css/style.css"
+  },
+
+  "dependencies": {
+    "sass": "^1.70.0"
+  }
+}
