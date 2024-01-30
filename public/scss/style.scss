@@ -282,3 +282,51 @@ main {
             height: 40px;
         }
 }
+
+
+@media screen and (max-width: 480px) {
+    
+    .header__container {
+        display: none;
+    }
+
+    main {
+            .about {
+                
+                &__title {
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    font-size: larger;
+                    text-align: center;      
+
+                h1 {
+                    display: none;
+                }
+
+                }
+            }
+    }
+
+    .services__title {
+        text-align: center;
+    }
+
+    // .address__map {
+    //     // width: 100%;
+    // }
+
+    .footer__body {
+        background-attachment: local;
+    }
+
+    .footer__contact {
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+
+    .footer__logo {
+        width: 10px;
+        height: 10px;
+    }
+}

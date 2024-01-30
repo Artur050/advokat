@@ -235,4 +235,34 @@ main .about__back img {
   height: 40px;
 }
 
+@media screen and (max-width: 480px) {
+  .header__container {
+    display: none;
+  }
+  main .about__title {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-size: larger;
+    text-align: center;
+  }
+  main .about__title h1 {
+    display: none;
+  }
+  .services__title {
+    text-align: center;
+  }
+  .footer__body {
+    background-attachment: local;
+  }
+  .footer__contact {
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+  .footer__logo {
+    width: 10px;
+    height: 10px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
